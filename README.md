@@ -1,6 +1,6 @@
 # RPS Cryptanalysis
 
-This repo contains material supporting the claims from the paper "Cryptanalysis of the Rank Preserving Signature" by Nicolas Aragon, Maxime Bros and Philippe Gaborit, published in the [18th IMA International Conference on Cryptography and Coding](https://ima.org.uk/16366/online-event-18th-ima-international-conference-on-cryptography-and-coding/ "18th IMACC").
+This repository contains material supporting the claims from the paper "Cryptanalysis of the Rank Preserving Signature" by Nicolas Aragon, Maxime Bros, and Philippe Gaborit, published in the [18th IMA International Conference on Cryptography and Coding](https://ima.org.uk/16366/online-event-18th-ima-international-conference-on-cryptography-and-coding/ "18th IMACC").
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ Dimension of the intersection with U*Y: 25
 Values that can be modified:
 
 * m by changing the names of the RBC functions in main.c, rps.h and rps.c
-* The dimensions of the vectors space in the parameters.h file
+* The dimensions of the vector spaces in the parameters.h file
 * The number of iterations in each execution by changing the ITERATIONS constant in main.c
 
 ### Forgery using random vectors
@@ -41,10 +41,11 @@ This part of our program shows how much time is needed in practice to forge vect
 
 ```bash
 cd random_vectors
+make main
 ./build/main
 ```
 
-Here is an example of output, showing that one vector z1 such that \|z1\| = \|z1.h^-1\| is found after 5793751 in average:
+Here is an example of output, showing that one vector z1 such that \|z1\| = \|z1.h^-1\| is found after 5793751 iterations on average:
 
 ```
 Average tries to find 1 vectors: 5793751
