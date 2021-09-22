@@ -12,7 +12,7 @@
  */
 
 #define TARGET_WEIGHT 55
-#define ITERATIONS (1 << 0)
+#define ITERATIONS (1 << 1)
 
 //Set to 1 one to look for |z1| = |z1.h^-1| and 2 to search for |z2| = |z2.h| as well
 #define N_VECTORS 1
